@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | EventSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars"></div>
+  <section class="admin-container">
+    <h2>🔒 Admin Panel</h2>
+
+    <div class="admin-section">
+      <h3>👤 User Moderation</h3>
+      <table>
+        <thead>
+          <tr><th>User</th><th>Status</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>user123</td>
+            <td>Active</td>
+            <td><button class="danger">Ban</button></td>
+          </tr>
+          <tr>
+            <td>coolorganizer</td>
+            <td>Flagged</td>
+            <td><button class="approve">Review</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="admin-section">
+      <h3>📅 Event Moderation</h3>
+      <table>
+        <thead>
+          <tr><th>Event</th><th>Status</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Midnight Rave</td>
+            <td>Pending</td>
+            <td><button class="approve">Approve</button> <button class="danger">Reject</button></td>
+          </tr>
+          <tr>
+            <td>Sunset Yoga</td>
+            <td>Approved</td>
+            <td><button class="danger">Unlist</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="admin-section">
+      <h3>📊 Platform Analytics</h3>
+      <ul>
+        <li>Total Users: <strong>1,204</strong></li>
+        <li>Total Events: <strong>178</strong></li>
+        <li>Tickets Sold Today: <strong>94</strong></li>
+      </ul>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ticket Settings | EventSphere</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <section class="ticket-settings-container">
+    <h2>🎟️ Ticket Settings</h2>
+
+    <form class="ticket-form">
+      <label>Ticket Name</label>
+      <input type="text" placeholder="Early Bird / VIP / General Admission" />
+
+      <label>Ticket Type</label>
+      <select>
+        <option value="free">Free</option>
+        <option value="paid">Paid</option>
+      </select>
+
+      <label>Price ($)</label>
+      <input type="number" placeholder="20.00" />
+
+      <label>Availability</label>
+      <input type="number" placeholder="100" />
+
+      <label>Sale Period</label>
+      <div class="date-row">
+        <input type="date" />
+        <span>to</span>
+        <input type="date" />
+      </div>
+
+      <button type="submit" class="save-ticket-btn">Add Ticket</button>
+    </form>
+
+    <div class="ticket-list">
+      <h3>Existing Tickets</h3>
+      <ul>
+        <li>
+          🎫 <strong>Early Bird</strong> – $15 – 50 seats
+          <button class="edit-ticket">Edit</button>
+          <button class="delete-ticket">Delete</button>
+        </li>
+        <li>
+          🎫 <strong>General Admission</strong> – $25 – 150 seats
+          <button class="edit-ticket">Edit</button>
+          <button class="delete-ticket">Delete</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

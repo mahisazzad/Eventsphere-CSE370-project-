@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Tickets | EventSphere</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <section class="my-tickets-container">
+    <h2>🎟️ My Tickets</h2>
+
+    <div class="ticket-card">
+      <div class="ticket-info">
+        <h3>Midnight Symphony</h3>
+        <p>📍 Dhaka | 🗓️ May 22, 2025 | 🕛 9:00 PM</p>
+        <p>Ticket Type: VIP</p>
+        <p>Order ID: #EVT12345</p>
+      </div>
+      <div class="ticket-qr">
+        <img src="images/qr-code-placeholder.png" alt="QR Code">
+        <a href="#" class="download-btn">Download Ticket</a>
+      </div>
+    </div>
+
+    <div class="ticket-card">
+      <div class="ticket-info">
+        <h3>Grunge Nights: Vol. II</h3>
+        <p>📍 Chattogram | 🗓️ Jun 10, 2025 | 🕙 10:00 PM</p>
+        <p>Ticket Type: General</p>
+        <p>Order ID: #EVT67890</p>
+      </div>
+      <div class="ticket-qr">
+        <img src="images/qr-code-placeholder.png" alt="QR Code">
+        <a href="#" class="download-btn">Download Ticket</a>
+      </div>
+    </div>
+    <div class="ticket-download-section">
+        <h2>Download Your Ticket</h2>
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" placeholder="Enter your name" required>
+      
+        <label for="ticketType">Ticket Type:</label>
+        <select id="ticketType" required>
+          <option value="General Admission">General Admission</option>
+          <option value="VIP">VIP</option>
+          <option value="Early Bird">Early Bird</option>
+        </select>
+      
+        <button id="downloadTicketBtn">Download Ticket PDF</button>
+      </div>
+    </div>        
+  </section>
+  <!-- jsPDF for PDF generation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- QRious for generating QR codes -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+
+<!-- Your main JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
