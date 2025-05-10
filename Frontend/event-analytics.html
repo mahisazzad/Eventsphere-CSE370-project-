@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Analytics | EventSphere</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <section class="analytics-container">
+    <h2>📊 Event Analytics</h2>
+
+    <div class="analytics-grid">
+      <div class="analytics-card">
+        <h3>Total Views</h3>
+        <p>5,426</p>
+      </div>
+      <div class="analytics-card">
+        <h3>Tickets Sold</h3>
+        <p>782</p>
+      </div>
+      <div class="analytics-card">
+        <h3>Revenue</h3>
+        <p>$14,920</p>
+      </div>
+      <div class="analytics-card">
+        <h3>Average Engagement</h3>
+        <p>4m 32s</p>
+      </div>
+    </div>
+
+    <canvas id="salesChart" width="800" height="400"></canvas>
+  </section>
+
+  <script>
+    const ctx = document.getElementById('salesChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7'],
+        datasets: [{
+          label: 'Tickets Sold',
+          data: [45, 60, 120, 180, 160, 95, 122],
+          borderColor: '#8b5cf6',
+          backgroundColor: 'rgba(139, 92, 246, 0.2)',
+          tension: 0.3,
+          fill: true
+        }]
+      },
+      options: {
+        plugins: {
+          legend: {
+            labels: {
+              color: '#ccc'
+            }
+          }
+        },
+        scales: {
+          x: {
+            ticks: { color: '#aaa' },
+            grid: { color: '#333' }
+          },
+          y: {
+            ticks: { color: '#aaa' },
+            grid: { color: '#333' }
+          }
+        }
+      }
+    });
+  </script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

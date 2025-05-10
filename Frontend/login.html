@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Signup | EventSphere</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <div class="auth-container">
+    <div class="auth-box">
+      <h2>Login to EventSphere</h2>
+      <form>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign up here</a></p>
+      </form>
+    </div>
+
+    <div class="auth-box hidden" id="signupBox">
+      <h2>Sign Up for EventSphere</h2>
+      <form>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="toggleForm()">Login here</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function toggleForm() {
+      document.querySelectorAll('.auth-box').forEach(box => box.classList.toggle('hidden'));
+    }
+  </script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

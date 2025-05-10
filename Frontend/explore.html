@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Events | EventSphere</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header class="page-header">
+    <nav>
+      <div class="logo">EventSphere</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html" class="active">Explore</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="search-filters">
+    <input type="text" placeholder="Search events..." id="search-input">
+    <select id="category-filter">
+      <option value="">Category</option>
+      <option value="music">Music</option>
+      <option value="art">Art</option>
+      <option value="theatre">Theatre</option>
+      <option value="tech">Tech</option>
+    </select>
+    <select id="location-filter">
+      <option value="">Location</option>
+      <option value="dhaka">Dhaka</option>
+      <option value="ctg">Chittagong</option>
+      <option value="rajshahi">Rajshahi</option>
+    </select>
+    <select id="price-filter">
+      <option value="">Price</option>
+      <option value="free">Free</option>
+      <option value="paid">Paid</option>
+    </select>
+  </section>
+
+  <section class="event-results">
+    <div class="event-grid">
+      <!-- Example card -->
+      <div class="event-card">
+        <img src="images/event1.jpg" alt="Event 1">
+        <h3>Midnight Symphony</h3>
+        <p>Dhaka • May 22 • ৳500</p>
+      </div>
+
+      <div class="event-card">
+        <img src="images/event2.jpg" alt="Event 2">
+        <h3>Urban Eclipse</h3>
+        <p>Chittagong • June 4 • Free</p>
+      </div>
+
+      <div class="event-card">
+        <img src="images/event3.jpg" alt="Event 3">
+        <h3>Starry Canvas</h3>
+        <p>Rajshahi • June 18 • ৳300</p>
+      </div>
+
+      <!-- More cards can be added -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EventSphere | All rights reserved</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
